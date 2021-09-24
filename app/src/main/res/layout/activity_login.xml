@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".login_activity">
 
     <LinearLayout
@@ -14,16 +15,71 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/human"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"/>
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/editTextTextEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:height="48dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="abcd@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="48dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:height="48dp"
+                        android:background="@drawable/backgroundeditview"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="........."
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LOGIN"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Already have an account? Log-in"
+                        android:textColor="#131313"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
 
         </LinearLayout>
     </LinearLayout>
