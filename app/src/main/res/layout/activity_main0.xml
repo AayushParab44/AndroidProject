@@ -65,6 +65,7 @@
         android:backgroundTint="#32A0F8"
         android:text="Register"
         android:textColor="@color/black"
+        android:onClick="reg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

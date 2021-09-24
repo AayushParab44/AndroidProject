@@ -23,7 +23,12 @@ public class MainActivity0 extends AppCompatActivity {
     }
     public void login(View v)
     {
-        Intent login=new Intent(MainActivity0.this,signup_activity.class);
+        Intent login=new Intent(MainActivity0.this,login_activity.class);
         startActivity(login);
+    }
+    public void reg(View v)
+    {
+        Intent reg=new Intent(MainActivity0.this,signup_activity.class);
+        startActivity(reg);
     }
 }
