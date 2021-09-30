@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".signup_activity"
+    android:background="@drawable/img_reg"
     android:orientation="vertical">
 
     <LinearLayout
