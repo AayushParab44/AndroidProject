@@ -114,7 +114,7 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/registerpg_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="REGISTER"
@@ -129,6 +129,16 @@
                 android:text="Already have an account? Log-in"
                 android:textColor="#131313"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/loginpg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
 
         </LinearLayout>
         </ScrollView>

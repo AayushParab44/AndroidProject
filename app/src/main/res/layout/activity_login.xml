@@ -38,7 +38,6 @@
                     app:civ_border_width="2dp" />
 
 
-
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
@@ -68,7 +67,7 @@
                     android:padding="10dp" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/login_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
@@ -84,10 +83,17 @@
                     android:textColor="#131313"
                     android:textStyle="bold" />
 
+                <Button
+                    android:id="@+id/reg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
             </LinearLayout>
         </ScrollView>
-
-
 
 
     </LinearLayout>
