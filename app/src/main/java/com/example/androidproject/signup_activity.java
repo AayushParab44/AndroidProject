@@ -26,7 +26,7 @@ public class signup_activity extends AppCompatActivity {
         password=(EditText)findViewById(R.id.password);
 
         btnreg=(Button) findViewById(R.id.reg_btn);
-        btnlogin=(Button) findViewById(R.id.registerpg_btn);
+        btnlogin=(Button) findViewById(R.id.loginpg_btn);
 
         myDB=new dbhelper(this);
 
