@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class login_activity extends AppCompatActivity {
 
     EditText email,password;
-    Button btnlogin;
+    Button btnlogin,btnsignup;
     dbhelper myDB;
 
 
@@ -26,6 +26,7 @@ public class login_activity extends AppCompatActivity {
         password=(EditText)findViewById(R.id.password);
 
         btnlogin=(Button) findViewById(R.id.login_btn);
+        btnsignup=(Button) findViewById(R.id.reg_btn);
 
         myDB=new dbhelper(this);
 
@@ -42,18 +43,32 @@ public class login_activity extends AppCompatActivity {
                 else
                 {
                     Boolean result = myDB.checkemailpassword(mail,pass);
-                    if(result==true)
+                    Boolean res= myDB.checkemail(mail);
+                    if(res==false)
+                    {
+                        Toast.makeText(login_activity.this, "User does not exist. Please register!", Toast.LENGTH_SHORT).show();
+
+                    }
+                    else if(result==true)
                     {
                         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                         startActivity(intent);
 
                     }
+
                     else
                     {
                         Toast.makeText(login_activity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                     }
 
                 }
+            }
+        });
+        btnsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(getApplicationContext(),signup_activity.class);
+                startActivity(intent);
             }
         });
 
