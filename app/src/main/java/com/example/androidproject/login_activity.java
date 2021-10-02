@@ -38,7 +38,7 @@ public class login_activity extends AppCompatActivity {
 
                 if(mail.equals("") || pass.equals(""))
                 {
-                    Toast.makeText(login_activity.this, "Fill all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(login_activity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
