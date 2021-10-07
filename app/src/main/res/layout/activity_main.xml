@@ -53,10 +53,11 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/upload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#2196F3"
+        android:onClick="upload"
         android:text="Upload"
         android:textColor="#090909"
         app:layout_constraintBottom_toBottomOf="parent"

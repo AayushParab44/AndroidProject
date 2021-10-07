@@ -28,5 +28,11 @@ Button clk;
         startActivity(prev_page);
 
     }
+    public void upload(View V)
+    {
+        Intent upload=new Intent(MainActivity.this,Camera.class);
+        startActivity(upload);
+
+    }
 
 }
