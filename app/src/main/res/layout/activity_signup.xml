@@ -44,7 +44,7 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Sign Up"
-                android:textColor="#0B0A0A"
+                android:textColor="#F4EBEB"
                 android:textStyle="bold" />
 
             <View
@@ -69,7 +69,8 @@
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:padding="10dp"
-                android:text="Name" />
+                android:text="Name"
+                android:textColor="#F6F5F5" />
 
             <EditText
                 android:id="@+id/editTextPhone"
@@ -83,7 +84,9 @@
                 android:hint="+91 1234567890"
                 android:inputType="phone"
                 android:minHeight="48dp"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColor="#F8F4F4"
+                android:textColorHint="#EAE4E4" />
 
             <EditText
                 android:id="@+id/email"
@@ -97,7 +100,9 @@
                 android:hint="abcd@gmail.com"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColor="#F6F4F4"
+                android:textColorHint="#F4F2F2" />
 
             <EditText
                 android:id="@+id/password"
@@ -111,7 +116,9 @@
                 android:hint="........."
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textColor="#F3EEEE"
+                android:textColorHint="#F6F3F3" />
 
             <Button
                 android:id="@+id/registerpg_btn"
@@ -127,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Already have an account? Log-in"
-                android:textColor="#131313"
+                android:textColor="#FBFBFB"
                 android:textStyle="bold" />
 
             <Button

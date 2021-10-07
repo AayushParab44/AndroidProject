@@ -50,7 +50,9 @@
                     android:hint="abcd@gmail.com"
                     android:inputType="textEmailAddress"
                     android:minHeight="48dp"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="#150101"
+                    android:textColorHint="#0E0101" />
 
                 <EditText
                     android:id="@+id/password"
@@ -64,7 +66,11 @@
                     android:hint="........."
                     android:inputType="textPassword"
                     android:minHeight="48dp"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="#120101"
+                    android:textColorHighlight="#0B0101"
+                    android:textColorHint="#100101"
+                    android:textColorLink="#190202" />
 
                 <Button
                     android:id="@+id/login_btn"
@@ -80,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Don't have an account? Register"
-                    android:textColor="#131313"
+                    android:textColor="#270606"
                     android:textStyle="bold" />
 
                 <Button
